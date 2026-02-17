@@ -265,10 +265,44 @@ align-items:center;
 gap:15px;
 }
 
+.hod-photo{
+width:90px;
+height:90px;
+border-radius:8px;   /* small rounded square */
+object-fit:cover;
+border:3px solid #002147;
+}
+
+.hod-photo:hover{
+transform:scale(1.05);
+}
+
+
 .hod-icon{
 font-size:38px;
 color:#002147;
 min-width:45px;
+}
+
+
+.teacher-card{
+text-align:center;
+padding:20px;
+}
+
+.teacher-photo{
+width:150px;      /* smaller size */
+height:150px;     /* perfect square */
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+border:3px solid #002147;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.teacher-photo:hover{
+transform:scale(1.05);
 }
 
 </style>
@@ -292,6 +326,7 @@ min-width:45px;
    💬
 </a>
 
+
 </head>
 
 <body>
@@ -313,11 +348,15 @@ min-width:45px;
 <div id="langToggle" onclick="toggleLanguage()">नेपाली</div>
 </div>
 <ul id="menu">
+
 <li><a href="#about" id="nav_about">About</a></li>
 <li><a href="#courses" id="nav_courses">Courses</a></li>
 <li><a href="#notice" id="nav_notice">Notice</a></li>
 <li><a href="#gallery" id="nav_gallery">Gallery</a></li>
 <li><a href="#contact" id="nav_contact">Contact</a></li>
+  <li><a href="#hod" id="nav_hod">HOD Details</a></li>
+  <li><a href="#teachers" id="nav_teachers">Teacher Details</a></li>
+  <li><a href="#pdf-section" id="nav_pdfs">PDFs</a></li>
 </ul>
 </nav>
 
@@ -474,14 +513,18 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 <div class="grid">
 
   <div class="card hod-card">
+<img src="shambhu.jpeg" alt="Shambhu Prasad Yadav" class="hod-photo">
+
     <div class="hod-icon">📘</div>
     <div>
       <strong id="hod_eng_title">English (HOD):</strong>
-      <p id="hod_english">Bajrangi Yadav</p>
+      <p id="hod_english">Shambhu Prasad Yadav</p>
     </div>
   </div>
 
   <div class="card hod-card">
+<img src="kapil.jpeg" alt="Kapil Prasad Baral" class="hod-photo">
+
     <div class="hod-icon">📖</div>
     <div>
       <strong id="hod_nep_title">Nepali (HOD):</strong>
@@ -490,6 +533,8 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
   </div>
 
   <div class="card hod-card">
+<img src="sukeshwar.jpeg" alt="Sukeshwar Yadav" class="hod-photo">
+
     <div class="hod-icon">📐</div> <!-- RULER FOR MATH -->
     <div>
       <strong id="hod_math_title">Mathematics (HOD):</strong>
@@ -498,6 +543,8 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
   </div>
 
   <div class="card hod-card">
+<img src="bindeshwar.jpeg" alt="Bindeshwar Yadav" class="hod-photo">
+
     <div class="hod-icon">🔬</div>
     <div>
       <strong id="hod_science_title">Science (HOD):</strong>
@@ -506,6 +553,8 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
   </div>
 
   <div class="card hod-card">
+<img src="madan.jpeg" alt="Madan Kumar Mahara" class="hod-photo">
+
     <div class="hod-icon">🌍</div>
     <div>
       <strong id="hod_social_title">Social Studies (HOD):</strong>
@@ -514,6 +563,8 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
   </div>
 
   <div class="card hod-card">
+<img src="surya.jpeg" alt="Surya Rekha Ishar" class="hod-photo">
+
     <div class="hod-icon">📊</div>
     <div>
       <strong id="hod_economics_title">Economics (HOD):</strong>
@@ -527,6 +578,8 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 
 
   <div class="card hod-card">
+<img src="kapil.jpeg" alt="Kapil Prasad Baral" class="hod-photo">
+
     <div class="hod-icon">🏫</div>
     <div>
       <strong id="assist_title">Assistant Head Teacher:</strong>
@@ -594,35 +647,180 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 <div class="grid">
 
 <div class="card">
+<img src="madan.jpeg" alt="Madan Kumar Mahara" class="teacher-photo">
 <h3>Madan Kumar Mahara</h3>
 <p><strong>Position:</strong> Head Teacher</p>
-<p><strong>Qualification:</strong> M.Ed</p>
+<p><strong>Qualification:</strong>M.ED. in EPM and M.A.in Rural Development from TU</p>
 <p><strong>Experience:</strong> 15+ Years</p>
 </div>
 
 <div class="card">
-<h3>Bajrangi Yadav</h3>
-<p><strong>Subject:</strong> English</p>
-<p><strong>Qualification:</strong> M.A English</p>
+<img src="shambhu.jpeg" alt="Shambhu Prasad Yadav" class="teacher-photo">
+<h3>Shambhu Prasad Yadav</h3>
+<p><strong>Subject:</strong> English and Co-ordinator of Secondary level</p>
+<p><strong>Qualification:</strong> M.ED English</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="kapil.jpeg" alt="Kapil Prasad Baral" class="teacher-photo">
+<h3>Kapil Prasad Baral</h3>
+<p><strong>Subject:</strong> Nepali</p>
+<p><strong>Qualification:</strong>M.ED in Nepali and M.A.in Sanskrit</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="balram.jpeg" alt="Balram Thakur" class="teacher-photo">
+<h3>Balram Thakur</h3>
+<p><strong>Subject:</strong> 10 class Math Teacher</p>
+<p><strong>Qualification:</strong>M.ED. in Mathematics</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="surya.jpeg" alt="Surya Rekha Issar" class="teacher-photo">
+<h3>Surya Rekha Issar</h3>
+<p><strong>Position:</strong> HOD Of Economics</p>
+<p><strong>Experience:</strong> 5+ Years</p>
+</div>
+
+<div class="card">
+<img src="bindeshwar.jpeg" alt="Bindeshwar Yadav" class="teacher-photo">
+<h3>Bindeshwar Yadav</h3>
+<p><strong>Position:</strong> HOD Of Science</p>
 <p><strong>Experience:</strong> 10+ Years</p>
 </div>
 
 <div class="card">
-<h3>Kapil Prasad Baral</h3>
-<p><strong>Subject:</strong> Nepali</p>
-<p><strong>Qualification:</strong> M.A Nepali</p>
-<p><strong>Experience:</strong> 12+ Years</p>
+<img src="bajrangi.jpeg" alt="Bajrangi Yadav" class="teacher-photo">
+<h3>Bajrangi Yadav</h3>
+<p><strong>Position:</strong>Co-ordinator of Secondary level</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="ram.jpeg" alt="Ram Jiban Mandal" class="teacher-photo">
+<h3>Ram Jiban Mandal</h3>
+<p><strong>Position:</strong>Co-ordinator Of Basic level</p>
+<p><strong>Experience:</strong> 8+ Years</p>
+</div>
+
+<div class="card">
+<img src="rajesh.jpeg" alt="Rajesh Yadav" class="teacher-photo">
+<h3>Rajesh Yadav</h3>
+<p><strong>Position:</strong>Lower secondary level teacher</p>
+<p><strong>Subject:</strong>Encharge of Exam</p>
+<p><strong>Qualification:</strong>M.ED English</p>
+<p><strong>Experience:</strong> 8+ Years</p>
+</div>
+
+<div class="card">
+<img src="ramudgar.jpeg" alt="Ram Udgar Yadav" class="teacher-photo">
+<h3>Ram Udgar Yadav</h3>
+<p><strong>Position:</strong>Lower secondary level teacher</p>
+<p><strong>Subject:</strong>Encharge of monitoring </p>
+<p><strong>Qualification:</strong>M.Ed. political science</p>
+<p><strong>Experience:</strong> 8+ Years</p>
+</div>
+
+<div class="card">
+<img src="shiv.jpeg" alt="Shiv Kumari Thakur" class="teacher-photo">
+<h3>Shiv Kumari Thakur</h3>
+<p><strong>Position:</strong>Lower secondary level teacher</p>
+<p><strong>Subject:</strong>Nepali Teacher  </p>
+<p><strong>Qualification:</strong>M.ED. in Nepali</p>
+<p><strong>Experience:</strong> 8+ Years</p>
+</div>
+
+<div class="card">
+<img src="radhika.jpeg" alt="Radhika Kumari Missar" class="teacher-photo">
+<h3>Radhika Kumari Missar</h3>
+<p><strong>Subject:</strong>Sub Co-ordinator Extra Activities</p>
+<p><strong>Qualification:</strong>M.A. in Population</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="rani.jpeg" alt="Rani Shingh" class="teacher-photo">
+<h3>Rani Shingh</h3>
+<p><strong>Position:</strong>Primary Level Encharge</p>
+<p><strong>Subject:</strong>Encharge of monitoring </p>
+<p><strong>Qualification:</strong>M.Ed. in Population</p>
+<p><strong>Experience:</strong> 8+ Years</p>
+</div>
+
+<div class="card">
+<img src="mithileshwar.jpeg" alt="Mithileshawar Mandal" class="teacher-photo">
+<h3>Mithileshawar Mandal</h3>
+<p><strong>Position:</strong>Senior primary Teacher</p>
+<p><strong>Subject:</strong>Laboratory Incharge </p>
+<p><strong>Qualification:</strong>M.Ed. in Population</p>
+<p><strong>Experience:</strong> 8+ Years</p>
+</div>
+
+<div class="card">
+<img src="pramod.jpeg" alt="Pramod Kumar Yadav" class="teacher-photo">
+<h3>Pramod Kumar Yadav</h3>
+<p><strong>Subject:</strong> Encharge of CTEVT program </p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="roshan.jpeg" alt="Roshan Raut" class="teacher-photo">
+<h3>Roshan Raut</h3>
+<p><strong>Subject:</strong> Psychologist encharge</p>
+<p><strong>Qualification:</strong>M.Ed /LLB</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="bibha.jpeg" alt="Bibha Kumari Yadav" class="teacher-photo">
+<h3>Bibha Kumari Yadav</h3>
+<p><strong>Subject:</strong> Gandar Incharge</p>
+<p><strong>Qualification:</strong>M.Ed Pramary Teacher</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="lalita.jpeg" alt="Lalita Kumari Yadav" class="teacher-photo">
+<h3>Lalita Kumari Yadav</h3>
+<p><strong>Subject:</strong>Food Monitor </p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+<div class="card">
+<img src="anju.jpeg" alt="Anju Kumari Yadav" class="teacher-photo">
+<h3>Anju Kumari Yadav</h3>
+<p><strong>Subject:</strong>Play Group Incharge</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
+
+<div class="card">
+<img src="om.jpeg" alt="Om Pratap Yadav" class="teacher-photo">
+<h3>Om Pratap Yadav</h3>
+<p><strong>Subject:</strong>Play Group Incharge</p>
+<p><strong>Experience:</strong> 15+ Years</p>
 </div>
 
 
 
 
 
+
+
+
+
+
+
+
 <div class="card">
+<img src="sukeshwar.jpeg" alt="Sukeshwar Yadav" class="teacher-photo">
 <h3>Sukeshwar Yadav</h3>
 <p><strong>Subject:</strong> Mathematics</p>
-<p><strong>Qualification:</strong> M.Sc Mathematics</p>
-<p><strong>Experience:</strong> 8+ Years</p>
+<p><strong>Qualification:</strong>M.A/M.ED. in Mathematics</p>
+<p><strong>Experience:</strong> 15+ Years</p>
 </div>
 
 
@@ -1031,7 +1229,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 
 
 <!-- ONLINE FORMS -->
-<section>
+<section id="forms">
 <h2>Online Admission Form</h2>
 <div class="card">
 <form action="https://formsubmit.co/tapasibabasecondaryschoolandco@gmail.com" method="POST">
@@ -1052,7 +1250,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 </div>
 </section>
 
-<section>
+<section id="forms">
 <h2>Teacher / Professional Application</h2>
 <div class="card">
 <form action="https://formsubmit.co/tapasibabasecondaryschoolandco@gmail.com" method="POST">
@@ -1072,7 +1270,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 </div>
 </section>
 
-<section>
+<section id="forms">
 <h2>Leave a Review</h2>
 <div class="card">
 <form action="https://formsubmit.co/tapasibabasecondaryschoolandco@gmail.com" method="POST">
@@ -1126,6 +1324,8 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 width="100%" height="300" style="border:0;"></iframe>
 </div>
 </section>
+
+
 <!-- OFFICIAL & GOVERNMENT LINKS -->
 <section style="padding:60px 10%; background:#f5f9ff;">
   <h2 style="color:#002147; text-align:center; margin-bottom:30px;">
