@@ -305,6 +305,59 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
+.mission-vision {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.mv-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  color: #222;
+}
+
+.mv-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.mv-card {
+  width: 380px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: 0.3s ease;
+  background: #ffffff;
+}
+
+.mv-card:hover {
+  transform: translateY(-8px);
+}
+
+.mv-card h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #111;
+}
+
+.mv-card ul {
+  padding-left: 20px;
+}
+
+.mv-card ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #444;
+  list-style-type: disc;
+}
+
+
 </style>
 
 <!-- WhatsApp Floating -->
@@ -350,13 +403,15 @@ transform:scale(1.05);
 <ul id="menu">
 
 <li><a href="#about" id="nav_about">About</a></li>
+<li><a href="#contact" id="nav_contact">Contact</a></li>
 <li><a href="#courses" id="nav_courses">Courses</a></li>
 <li><a href="#notice" id="nav_notice">Notice</a></li>
 <li><a href="#gallery" id="nav_gallery">Gallery</a></li>
-<li><a href="#contact" id="nav_contact">Contact</a></li>
-  <li><a href="#hod" id="nav_hod">HOD Details</a></li>
-  <li><a href="#teachers" id="nav_teachers">Teacher Details</a></li>
-  <li><a href="#pdf-section" id="nav_pdfs">PDFs</a></li>
+<li><a href="#mission" id="mission_vision">Mission and Vision</a></li>
+<li><a href="#admission" id="nav_admissiom">Admission form</a></li>
+<li><a href="#hod" id="nav_hod">HOD Details</a></li>
+<li><a href="#teachers" id="nav_teachers">Teacher Details</a></li>
+
 </ul>
 </nav>
 
@@ -486,6 +541,43 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 </div>
 </section>
 
+<section class="mission-vision" id="mission">
+  <h2 class="mv-title">Our Mission & Vision</h2>
+
+  <div class="mv-container">
+
+    <!-- Mission -->
+    <div class="mv-card">
+      <div class="mv-icon">🎯</div>
+      <h3>Our Mission</h3>
+      <ul>
+        <li>Provide high-quality and modern education.</li>
+        <li>Build strong moral values and discipline.</li>
+        <li>Encourage creativity and critical thinking.</li>
+        <li>Support every student’s individual talent.</li>
+        <li>Create a safe and positive learning environment.</li>
+        <li>Promote leadership and teamwork skills.</li>
+        <li>Prepare students for higher education and future careers.</li>
+      </ul>
+    </div>
+
+    <!-- Vision -->
+    <div class="mv-card">
+      <div class="mv-icon">🌟</div>
+      <h3>Our Vision</h3>
+      <ul>
+        <li>To be a leading institution in academic excellence.</li>
+        <li>To develop confident and responsible citizens.</li>
+        <li>To inspire lifelong learning habits.</li>
+        <li>To integrate technology in modern education.</li>
+        <li>To nurture innovation and creativity.</li>
+        <li>To create globally competitive students.</li>
+        <li>To build a strong foundation for national development.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -872,9 +964,17 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 <div class="card">
 <img src="om.jpeg" alt="Om Pratap Yadav" class="teacher-photo">
 <h3>Om Pratap Yadav</h3>
-<p><strong>Subject:</strong>Play Group Incharge</p>
+<p><strong>Subject:</strong>Assist Accountant</p>
 <p><strong>Experience:</strong> 15+ Years</p>
 </div>
+
+<div class="card">
+<img src="dipa.jpeg" alt="Dipa Kumari Mandal" class="teacher-photo">
+<h3>Dipa Kumari Mandal</h3>
+<p><strong>Subject:</strong>Assist Accountant</p>
+<p><strong>Experience:</strong> 15+ Years</p>
+</div>
+
 
 
 
@@ -1301,7 +1401,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 
 
 <!-- ONLINE FORMS -->
-<section id="forms">
+<section id="admission">
 <h2>Online Admission Form</h2>
 <div class="card">
 <form action="https://formsubmit.co/tapasibabasecondaryschoolandco@gmail.com" method="POST">
@@ -1342,7 +1442,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 </div>
 </section>
 
-<section id="forms">
+<section id="formes">
 <h2>Leave a Review</h2>
 <div class="card">
 <form action="https://formsubmit.co/tapasibabasecondaryschoolandco@gmail.com" method="POST">
@@ -1548,6 +1648,125 @@ document.getElementById("assist_name").innerText = "कपिल प्रसा
     document.getElementById("course3_text").innerText = "प्राविधिक कार्यक्रम जसले व्यावहारिक औद्योगिक प्रशिक्षण सहित दक्ष Electrical Sub-Overseers उत्पादन गर्छ।";
     document.getElementById("notice_title").innerText = "सूचना पाटी";
     document.getElementById("notice_text").innerHTML = "• २०८३ बि.सं. को शैक्षिक वर्षको लागि भर्ना खुला।<br>• छात्रवृत्ति फारम प्रशासन कार्यालयमा उपलब्ध।<br>• प्रवेश परीक्षा मिति छिट्टै प्रकाशित हुनेछ।";
+// Founder & Head Teacher
+document.querySelector("#founder-head h2").innerText = "संस्थापक तथा प्रधानाध्यापक";
+
+// Courses Section
+document.getElementById("courses_title").innerText = "प्रस्तावित पाठ्यक्रम";
+document.getElementById("course1").innerText = "+२ विज्ञान";
+document.getElementById("course1_text").innerText = "इन्जिनियरिङ, मेडिकल, आईटी, कृषि तथा प्राविधिक क्षेत्रका लागि पूर्ण प्रयोगशाला सहितको कार्यक्रम।";
+
+document.getElementById("course2").innerText = "+२ शिक्षा";
+document.getElementById("course2_text").innerText = "भविष्यका शिक्षकहरूका लागि शिक्षण विधि र सामाजिक विषयमा आधारित कार्यक्रम।";
+
+document.getElementById("course3").innerText = "विद्युत इन्जिनियरिङ प्रि-डिप्लोमा (CTEVT)";
+document.getElementById("course3_text").innerText = "प्राविधिक तालिमसहित दक्ष विद्युत सब-ओभरसियर उत्पादन गर्ने कार्यक्रम।";
+
+// +2 Management
+document.querySelector("#courses .card:nth-child(4) h3").innerText = "+२ व्यवस्थापन";
+document.querySelector("#courses .card:nth-child(4) p").innerText = "व्यवसाय, लेखा, वित्त र उद्यमशीलतामा रुचि भएका विद्यार्थीका लागि।";
+
+// English Medium
+document.querySelector("#courses .card:nth-child(5) h3").innerText = "अंग्रेजी माध्यम (PG देखि कक्षा १० सम्म)";
+document.querySelector("#courses .card:nth-child(5) p").innerText = "प्ले ग्रुप (PG) देखि कक्षा १० सम्म अंग्रेजी माध्यम शिक्षा प्रदान गरिन्छ।";
+
+// Mission & Vision
+document.querySelector(".mv-title").innerText = "हाम्रो लक्ष्य र दृष्टि";
+
+document.querySelectorAll(".mv-card h3")[0].innerText = "हाम्रो लक्ष्य";
+document.querySelectorAll(".mv-card h3")[1].innerText = "हाम्रो दृष्टि";
+
+// HOD Section
+document.getElementById("hod_title").innerText = "विभाग प्रमुख तथा प्रशासन";
+
+// Teacher Section
+document.querySelector("#teachers h2").innerText = "शिक्षक विवरण";
+
+// Notice Section
+document.getElementById("notice_title").innerText = "सूचना पाटी";
+
+// Gallery
+document.getElementById("gallery_title").innerText = "फोटो ग्यालरी";
+
+// PDF Section
+document.querySelector("#pdf-section h2").innerText = "विद्यार्थी तथा विद्यालय PDF";
+
+// College Programs
+document.querySelector("#college h2").innerText = "कलेज कार्यक्रमहरू";
+
+// Facebook Section
+document.querySelector("#facebook-direct h2").innerText = "हाम्रो फेसबुक पेज फलो गर्नुहोस्";
+
+// SEE Preparation
+document.querySelector("section:nth-of-type(??) h2").innerText = "SEE (कक्षा १०) तयारी";
+
+// Admission Form
+document.querySelector("#about h2").innerText = "अनलाइन भर्ना फारम";
+
+// Teacher Application
+document.querySelector("#forms h2").innerText = "शिक्षक / पेशागत आवेदन";
+
+// Review
+document.querySelector("#formes h2").innerText = "प्रतिक्रिया दिनुहोस्";
+
+// Direct Message
+document.getElementById("direct_title").innerText = "सिधा सन्देश";
+
+// Contact
+document.getElementById("contact_title").innerText = "सम्पर्क गर्नुहोस्";
+
+    // BANNER
+    document.getElementById("banner_h1").innerText = "तपसी बाबा माध्यमिक विद्यालय तथा कलेज";
+    document.getElementById("banner_p1").innerText = "टिल्ही, हंसपुर नगरपालिका-६, धनुषा";
+    document.getElementById("banner_p2").innerHTML = "<strong>स्थापना: २०३५ बी.एस.</strong>";
+
+    // NAVIGATION
+    document.getElementById("nav_about").innerText = "हाम्रो बारेमा";
+    document.getElementById("nav_contact").innerText = "सम्पर्क";
+    document.getElementById("nav_courses").innerText = "पाठ्यक्रमहरू";
+    document.getElementById("nav_notice").innerText = "सूचना";
+    document.getElementById("nav_gallery").innerText = "ग्यालरी";
+    document.getElementById("mission_vision").innerText = "लक्ष्य र दृष्टिकोण";
+    document.getElementById("nav_admissiom").innerText = "भर्ना फारम";
+    document.getElementById("nav_hod").innerText = "विभाग प्रमुख";
+    document.getElementById("nav_teachers").innerText = "शिक्षक विवरण";
+
+    // ABOUT
+    document.getElementById("about_title").innerText = "हाम्रो बारेमा";
+    document.getElementById("principal_title").innerText = "प्रधानाध्यापकको सन्देश";
+    document.getElementById("about_text").innerHTML = "वि.सं. २०३५ सालमा स्थापना भएको तपसी बाबा माध्यमिक विद्यालय तथा कलेज धनुषाको प्रतिष्ठित शैक्षिक संस्था हो। हामी ECD देखि कक्षा १२ सम्म र विद्युत इन्जिनियरिङ्ग प्रि-डिप्लोमा कार्यक्रम सञ्चालन गर्दछौं। हाम्रो लक्ष्य गुणस्तरीय शिक्षा र अनुशासित वातावरण प्रदान गर्नु हो।";
+    document.getElementById("principal_text").innerHTML = "प्रधानाध्यापकको स्वागत छ। हाम्रो लक्ष्य गुणस्तरीय शिक्षा प्रदान गर्नु हो। शिक्षा नै राष्ट्रिय विकासको आधार हो। <strong>- मदन कुमार महरा (प्रधानाध्यापक)</strong>";
+
+    // FOUNDER & HEAD TEACHER
+    document.querySelector("#founder-head h2").innerText = "👨‍🏫 संस्थापक र प्रधानाध्यापक";
+
+    // COURSES
+    document.getElementById("courses_title").innerText = "पाठ्यक्रमहरू";
+
+    // MISSION & VISION
+    document.querySelector(".mv-title").innerText = "हाम्रो लक्ष्य र दृष्टिकोण";
+    document.querySelectorAll(".mv-card h3")[0].innerText = "हाम्रो लक्ष्य";
+    document.querySelectorAll(".mv-card h3")[1].innerText = "हाम्रो दृष्टिकोण";
+
+    // HOD
+    document.getElementById("hod_title").innerText = "विभाग प्रमुख तथा प्रशासन";
+
+    // TEACHERS
+    document.querySelector("#teachers h2").innerText = "शिक्षक विवरण";
+
+    // NOTICE
+    document.getElementById("notice_title").innerText = "सूचना बोर्ड";
+
+    // GALLERY
+    document.getElementById("gallery_title").innerText = "तस्बिर ग्यालरी";
+
+    // ADMISSION
+    document.querySelector("#admission h2").innerText = "अनलाइन भर्ना फारम";
+
+    // SEE Preparation
+    document.querySelector("#facebook-direct h2").innerText = "📘 फेसबुकमा हामीलाई फलो गर्नुहोस्";
+
+
     document.getElementById("gallery_title").innerText = "तस्बिर ग्यालरी";
     document.getElementById("direct_title").innerText = "प्रत्यक्ष सन्देश";
     document.getElementById("contact_title").innerText = "सम्पर्क गर्नुहोस्";
