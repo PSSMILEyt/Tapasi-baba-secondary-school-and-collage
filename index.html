@@ -72,6 +72,21 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- Schema.org / JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "EducationalOrganization",
+ "name": "Tapasi Baba Secondary School & College",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Dhanusha",
+   "addressCountry": "Nepal"
+ },
+ "areaServed": "Dhanusha",
+ "keywords": "Best School in Dhanusha, +2 Science, CTEVT"
+}
+</script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -357,8 +372,104 @@ transform:scale(1.05);
   list-style-type: disc;
 }
 
+section {
+  padding: 90px 10%;
+}
+
+.card {
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+
+nav {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+
+.features-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  border-color: #002147;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: #002147;
+  color: #ffffff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: #ff9800;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #002147;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
 
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 <!-- WhatsApp Floating -->
 <a href="https://wa.me/9779807273910"
@@ -378,6 +489,13 @@ transform:scale(1.05);
    ">
    💬
 </a>
+
+<meta name="geo.region" content="NP-2">
+<meta name="geo.placename" content="Dhanusha, Nepal">
+<meta name="geo.position" content="26.7398776;86.043541">
+<meta name="ICBM" content="26.7398776, 86.043541">
+
+<meta name="keywords" content="Best School in Dhanusha, Best College in Dhanusha, +2 Science Dhanusha, +2 Management Dhanusha, CTEVT Electrical Dhanusha, School in Tilhi, Hanspur Municipality School, Tapasi Baba School Nepal">
 
 
 </head>
@@ -485,7 +603,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
       <div style="padding:20px;">
         <h3 style="color:#002147; margin-bottom:5px;">Madan Kumar Mahara</h3>
         <p style="color:#555; font-weight:500;">Head Teacher</p>
-        <p style="color:#555; font-weight:500;">+9779807273910 / +9779807273910</p>
+        <p style="color:#555; font-weight:500;">+9779842836341</p>
 
       </div>
     </div>
@@ -600,6 +718,67 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 
   </div>
 </section>
+
+<!-- Salient Features Section -->
+<section id="salient-features" class="features-section">
+  <div class="container">
+    <h2 class="section-title">Salient Features</h2>
+    <p class="section-subtitle">Providing quality education with modern facilities</p>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-computer"></i></div>
+        <h3>Computer Lab</h3>
+        <p>Well-equipped lab for basic and advanced computer skills to prepare students for the digital world.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-chalkboard"></i></div>
+        <h3>Smart Board</h3>
+        <p>Interactive smart boards for multimedia learning experience and engaging classroom environment.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+        <h3>Library</h3>
+        <p>Strong collection of textbooks and reference materials to expand knowledge beyond syllabus.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-flask"></i></div>
+        <h3>Science Lab</h3>
+        <p>Fully equipped laboratory for practical experiments and hands-on scientific learning.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+        <h3>Canteen</h3>
+        <p>Clean and hygienic food with nutritious meals at affordable prices.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-tree"></i></div>
+        <h3>Beautiful Campus</h3>
+        <p>Attractive building with green garden creating a peaceful and refreshing environment.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+        <h3>Well-Trained Teachers</h3>
+        <p>Qualified and experienced teachers using modern teaching methods and individual attention.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+        <h3>Extracurricular Activities</h3>
+        <p>Sports, Singing, Debate and many activities to build confidence, talent and teamwork.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -748,15 +927,10 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
     </div>
   </div>
 
-  <div class="card hod-card">
-<img src="surya.jpeg" alt="Surya Rekha Ishar" class="hod-photo">
 
-    <div class="hod-icon">📊</div>
-    <div>
-      <strong id="hod_economics_title">Economics (HOD):</strong>
-      <p id="hod_economics">Surya Rekha Ishar</p>
-    </div>
-  </div>
+
+
+
 
 
 
@@ -776,6 +950,16 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
       <p id="hod_economics">Surya Rekha Ishar</p>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -861,7 +1045,7 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 <div class="card">
 <img src="shambhu.jpeg" alt="Shambhu Prasad Yadav" class="teacher-photo">
 <h3>Shambhu Prasad Yadav</h3>
-<p><strong>Subject:</strong> English and Co-ordinator of Secondary level</p>
+<p><strong>Subject:</strong> English </p>
 <p><strong>Qualification:</strong> M.ED English</p>
 <p><strong>Experience:</strong> 15+ Years</p>
 </div>
@@ -885,14 +1069,14 @@ Welcome to Tapasi Baba Secondary School & College. Our goal is to provide qualit
 <div class="card">
 <img src="surya.jpeg" alt="Surya Rekha Issar" class="teacher-photo">
 <h3>Surya Rekha Issar</h3>
-<p><strong>Position:</strong> HOD Of Economics</p>
+<p><strong>Position:</strong> Account & Economic teacher</p>
 <p><strong>Experience:</strong> 5+ Years</p>
 </div>
 
 <div class="card">
 <img src="bindeshwar.jpeg" alt="Bindeshwar Yadav" class="teacher-photo">
 <h3>Bindeshwar Yadav</h3>
-<p><strong>Position:</strong> HOD Of Science</p>
+<p><strong>Subject:</strong>Science</p>
 <p><strong>Experience:</strong> 10+ Years</p>
 </div>
 
@@ -1798,6 +1982,43 @@ document.getElementById("contact_title").innerText = "सम्पर्क ग�
 
     // SEE Preparation
     document.querySelector("#facebook-direct h2").innerText = "📘 फेसबुकमा हामीलाई फलो गर्नुहोस्";
+
+// NAVIGATION
+document.getElementById("nav_about").innerText = "हाम्रो बारेमा";
+document.getElementById("nav_contact").innerText = "सम्पर्क";
+document.getElementById("nav_courses").innerText = "कोर्षहरू";
+document.getElementById("nav_notice").innerText = "सूचना";
+document.getElementById("nav_gallery").innerText = "ग्यालरी";
+document.getElementById("mission_vision").innerText = "उद्देश्य र दृष्टि";
+document.getElementById("nav_admissiom").innerText = "भर्ना फारम";
+document.getElementById("nav_hod").innerText = "विभाग प्रमुख";
+document.getElementById("nav_teachers").innerText = "शिक्षक विवरण";
+
+// ABOUT
+document.getElementById("about_title").innerText = "हाम्रो बारेमा";
+document.getElementById("about_text").innerText =
+"२०३५ सालमा स्थापना भएको तपासी बाबा माध्यमिक विद्यालय धनुषा जिल्लाको एक प्रतिष्ठित शैक्षिक संस्था हो। यस विद्यालयले ईसीडी देखि कक्षा १२ सम्म तथा प्रि-डिप्लोमा इन इलेक्ट्रिकल इन्जिनियरिङ कार्यक्रम सञ्चालन गर्दै आएको छ।";
+
+// PRINCIPAL
+document.getElementById("principal_title").innerText = "प्रधानाध्यापकको सन्देश";
+document.getElementById("principal_text").innerHTML =
+"तपासी बाबा माध्यमिक विद्यालयमा स्वागत छ। हामी गुणस्तरीय शिक्षा, अनुशासन र नैतिक मूल्यमा विश्वास गर्दछौं।<br><br><strong>- मदन कुमार महरा (प्रधानाध्यापक)</strong>";
+
+// COURSES TITLE
+document.getElementById("courses_title").innerText = "उपलब्ध कोर्षहरू";
+
+// NOTICE
+document.getElementById("notice_title").innerText = "सूचना पाटी";
+
+// GALLERY
+document.getElementById("gallery_title").innerText = "तस्बिर ग्यालरी";
+
+// CONTACT
+document.getElementById("contact_title").innerText = "सम्पर्क गर्नुहोस्";
+
+// DIRECT MESSAGE
+document.getElementById("direct_title").innerText = "प्रत्यक्ष सन्देश";
+
 
 
     document.getElementById("gallery_title").innerText = "तस्बिर ग्यालरी";
